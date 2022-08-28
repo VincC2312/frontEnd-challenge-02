@@ -4,17 +4,172 @@
   padding: 0;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 2.2rem;
+}
+.home__title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  width: 350px;
+  color: hsl(0deg, 6%, 24%);
+}
+.home__first-title {
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+}
+.home__description {
+  line-height: 1.4rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+.home__form {
+  margin-top: 2rem;
+  position: relative;
+}
+.home__form input {
+  padding: 1.2rem;
+  min-width: 70vw;
+  border-radius: 2rem;
+  border: 1px solid hsla(0deg, 36%, 70%, 0.377);
+  background-color: hsl(0deg, 100%, 98%);
+  outline: none;
+  color: hsl(0deg, 36%, 70%);
+}
+.home__form input::-moz-placeholder {
+  color: hsla(0deg, 36%, 70%, 0.377);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+.home__form input:-ms-input-placeholder {
+  color: hsla(0deg, 36%, 70%, 0.377);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+.home__form input::placeholder {
+  color: hsla(0deg, 36%, 70%, 0.377);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+.home__form .hm__submit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 1.8rem;
+  border-radius: 2rem;
+  border: none;
+  background: linear-gradient(to right, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  box-shadow: 2px 5px 10px hsla(0deg, 36%, 70%, 0.377);
+  transition: 0.5s;
+}
+.home__form .hm__submit-button:hover {
+  opacity: 0.6;
+  box-shadow: 2px 5px 10px hsl(0deg, 6%, 24%);
+  cursor: pointer;
+}
+.home__form .hm__submit-button:active {
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 650px) {
+  .hero-mobile img {
+    display: none;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-size: contain;
+  }
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 0.4rem 0.5rem;
+    width: 50vw;
+  }
+  .main__container .home {
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+  }
+  .main__container .home__title {
+    text-align: start;
+    width: 100%;
+    font-size: 3rem;
+  }
+  .main__container .home__description {
+    text-align: start;
+    width: 100%;
+  }
+  .main__container .home__form input {
+    min-width: 40vw;
+  }
+  .main__desktop {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1028px) {
+  * {
+    transition: all 0.1s ease-in;
+  }
+  .main__container {
+    margin: 2rem 6rem;
+    padding: 2rem 6rem;
+  }
+  .main__container .home {
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+  }
+  .main__container .home__title {
+    width: 400px;
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 1.2rem;
+  }
+  .main__container .home__description {
+    text-align: start;
+    width: 450px;
+  }
+  .main__container .home__form input {
+    min-width: 25vw;
+  }
+}
 body {
   height: 100vh;
   font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
 }
 
-/*  -----footer-----  */
-.attribution {
-  font-size: 12px;
-  text-align: center;
+p,
+footer {
+  color: hsl(0deg, 36%, 70%);
 }
 
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
+.main {
+  overflow: hidden;
+}
+
+.header {
+  margin: 2rem;
+}
+
+.hero-mobile img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

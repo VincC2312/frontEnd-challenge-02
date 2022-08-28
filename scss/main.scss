@@ -1,15 +1,24 @@
 @import "config";
-
+@import "home";
+@import "responsive";
 body {
   height: 100vh;
   font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
-/*  -----footer-----  */
-.attribution {
-  font-size: 12px;
-  text-align: center;
+p,
+footer {
+  color: $primary-color;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.main {
+  overflow: hidden;
+}
+.header {
+  margin: 2rem;
+}
+.hero-mobile {
+  img {
+    width: 100%;
+  }
 }
