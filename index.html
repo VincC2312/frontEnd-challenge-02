@@ -22,44 +22,38 @@
   </head>
   <body>
     <main class="main">
-      <header class="header">
-        <img src="/images/logo.svg" alt="base-apparel-logo" />
-      </header>
-      <picture class="hero-mobile">
-        <img src="/images/hero-mobile.jpg" alt="pretty-woman" />
-      </picture>
-      <section class="home">
-        <h1 class="home__title">
-          <span class="home__first-title">We're</span>
-          coming soon
-        </h1>
-        <p class="home__description">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <form class="home__form">
-          <input
-            type="email"
-            placeholder="Email Address"
-            name="email"
-            required
-          />
-          <button class="hm__submit-button" type="submit">
-            <img src="/images/icon-arrow.svg" alt="cute-arrow" />
-          </button>
-        </form>
+      <section class="main__container">
+        <header class="header">
+          <img src="/images/logo.svg" alt="base-apparel-logo" />
+        </header>
+        <picture class="hero-mobile">
+          <img src="/images/hero-mobile.jpg" alt="pretty-woman" />
+        </picture>
+        <section class="home">
+          <h1 class="home__title">
+            <span class="home__first-title">We're</span>
+            coming soon
+          </h1>
+          <p class="home__description">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form class="home__form">
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              required
+            />
+            <button class="hm__submit-button" type="submit">
+              <img src="/images/icon-arrow.svg" alt="cute-arrow" />
+            </button>
+          </form>
+        </section>
       </section>
-    </main>
 
-    <!--         FOOTER             -->
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+      <div class="main__desktop"></div>
+    </main>
   </body>
 </html>
