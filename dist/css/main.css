@@ -38,8 +38,8 @@
   position: relative;
 }
 .home__form input {
-  padding: 1.2rem;
-  min-width: 70vw;
+  padding: 1.2rem 0.6rem;
+  min-width: 90vw;
   border-radius: 2rem;
   border: 1px solid hsla(0deg, 36%, 70%, 0.377);
   background-color: hsl(0deg, 100%, 98%);
@@ -131,6 +131,8 @@
   }
   .main__container .home__form input {
     min-width: 40vw;
+    padding: 1.2rem;
+    border-radius: 2rem;
   }
   .main__desktop {
     width: 100%;

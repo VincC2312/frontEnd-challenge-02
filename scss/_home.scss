@@ -33,8 +33,9 @@
     position: relative;
 
     input {
-      padding: 1.2rem;
-      min-width: 70vw;
+      padding: 1.2rem 0.6rem;
+
+      min-width: 90vw;
       border-radius: 2rem;
       border: 1px solid $dark-primary-color;
       background-color: hsl(0, 100%, 98%);
