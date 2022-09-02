@@ -91,10 +91,12 @@
   border-radius: 50%;
   box-shadow: 1px 2px 8px hsla(0deg, 36%, 70%, 0.377);
 }
-.home__error-message {
-  margin: 0.6rem 0.7rem;
+.home__form .home__error-message {
+  position: absolute;
+  bottom: -50%;
+  left: 5%;
 }
-.home__error-message p {
+.home__form .home__error-message p {
   color: hsl(0deg, 93%, 68%);
 }
 
