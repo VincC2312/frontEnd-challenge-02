@@ -36,7 +36,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [my-solution](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-solution-UW6wZBd1Wn)
 - Live Site URL: [live-here](https://apparel-solution.netlify.app/)
 
 ## My process
