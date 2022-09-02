@@ -13,17 +13,9 @@ form.addEventListener("submit", function (e) {
   const email = emailInput.value;
   e.preventDefault();
   if (email.match(re)) {
-    errorIcon.classList.add("hidden");
-    errorMessage.classList.add("hidden");
     form.submit();
   } else {
     errorIcon.classList.remove("hidden");
     errorMessage.classList.remove("hidden");
   }
 });
-
-// function validateEmail(email) {
-//   const re =
-//     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//   return re.test(String(email).toLowerCase());
-// }
